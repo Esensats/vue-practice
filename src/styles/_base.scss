@@ -1,0 +1,48 @@
+@use "variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // text-align: center;
+  color: variables.$colorSecondaryDark;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+// #app > div:nth-child(2) {
+//   flex: 1 1 auto;
+// }
+
+a {
+  color: inherit;
+
+  &:hover {
+    color: variables.$colorPrimary;
+  }
+  &.router-link-exact-active {
+    color: variables.$colorPrimary;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 500px;
+  overflow: auto;
+  // min-height: 300px;
+  // border: 1px solid variables.$colorSecondary;
+  padding: 30px;
+  border-radius: 5px;
+}

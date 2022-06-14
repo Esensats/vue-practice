@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./built",
+    "allowJs": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  },
+  "include": ["./**/*"],
+  "exclude": [
+    "./plugins/**/*",
+    "./typings/**/*",
+    "./built/**/*" // This is what fixed it!
+  ]
+}
