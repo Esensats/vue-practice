@@ -1,5 +1,7 @@
 # prac_oop_may
 
+Deployed [here](https://esensats-vue-practice.netlify.app/)
+
 ## Project setup
 ```
 npm install
